@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body {
+    display: flex;
+    /* flex-direction: row;
+    flex-wrap: wrap; */
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    height: 100vh;
+}
+header, footer {
+    border: 1px dashed green;
+    background-color: rgba(0,255,0,0.3);
+    width: 10%;
+    /* height: 10vh; */
+}
+aside {
+    border: 1px dashed red;
+    background-color: rgba(255,0,0,0.3);
+    width: 10%;
+    /* height: 10vh; */
+}
+main {
+    border: 1px dashed blue;
+    background-color:rgba(0,0,255,0.3);
+    width: 10%;
+    /* height: 20vh; */
+}
