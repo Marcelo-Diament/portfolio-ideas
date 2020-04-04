@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 32px;
+}
+a, a:visited, a:active {
+    text-decoration: none;
+    color: blue;
+    font-size: inherit;
+    font-weight: bolder;
+}
+a:hover {
+    color: #000;
+}
+header p {
+    margin: 16vh auto 25px auto;
+    width: 64%;
+    font-size: 2em;
+    line-height: 1.25em;
+    font-family: 'Montserrat', sans-serif;
+}
+main article {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px;
+}
+main article div {
+    flex: 0 1 33%;
+    margin: auto;
+}
+main article:nth-child(even) div:nth-child(2) {
+    order: -1;
+}
+main article div h2,
+main article div p,
+main article div a {
+    display: block;
+    width: 80%;
+    margin: auto;
+}
+main article div h2 {
+    font-size: 1.25em;
+}
+main article div p,
+main article div a {
+    font-weight: 300;
+    font-size: 0.66em;
+}
+main article div a {
+    font-weight: bolder;
+}
+main article div img {
+    width: 90%;
+    height: auto;
+    float: right;
+}
