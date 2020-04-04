@@ -3,89 +3,189 @@
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    font-family: 'Cousine', monospace;
 }
 ul {
     list-style: none;
+}
+a,
+a:visited,
+a:active {
+    text-decoration: none;
+    color: rgb(60, 150, 206);
+}
+a:hover {
+    color: lightskyblue;
+}
+i[class*="fa"] {
+    color: darkgrey;
+}
+i.fa-github:hover {
+    color: #000;
+}
+i.fa-linkedin:hover,
+i.fa-file-alt:hover {
+    color: #0274b3;
 }
 body {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-    align-items: stretch;
+    align-items: flex-start;
     height: 100vh;
+    background-color: #fafafa;
 }
-header, footer {
-    border: 1px dashed green;
-    background-color: rgba(0,255,0,0.3);
-    flex: 1 0 100%;
-    height: 10vh;
-    text-align: center;
-    padding: 20px;
-}
-footer ul {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-evenly;
-    align-items: center;
-}
-footer ul li {
-    flex: 0 0 auto;
-}
+/* ASIDE */
 aside {
-    border: 1px dashed red;
-    background-color: rgba(255,0,0,0.3);
-    flex: 1 1 40%;
-    /* height: 80vh; */
+    flex: 0 1 30%;
+    height: 100vh;
+    padding: 50px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+aside h1.titulo {
+    color: #4a4a4a;
+}
+aside h1.titulo:nth-child(4n) {
+    margin-bottom: 20px;
+}
+aside p {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.6em;
 }
 aside ul {
+    margin: 20px auto 20px 0;
+}
+ul.lista-horizontal {
     display: flex;
-    flex-flow: column-reverse nowrap;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+ul.lista-horizontal li {
+    flex: 0 0 auto;
+    margin-right: 10px;
+}
+a[title="Manda uma mensagem pra mim!"] {
+    background-color: #1660e7;
+    color: #fff;
+    font-weight: lighter;
+    padding: 5px 12px;
+    border-radius: 15px;
+    font-size: 0.75em;
+}
+a[title="Manda uma mensagem pra mim!"]:hover {
+    background-color: #094dcc;
+}
+/* MAIN */
+main {
+    flex: 1 1 65%;
+    overflow-y: scroll;
+    height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
     justify-content: flex-start;
     align-items: stretch;
-    margin: 20px;
+    color: #fff;
+    filter: drop-shadow(1px 0 3px rgba(0,0,0,0.6));
 }
-aside ul li {
-    flex: 1 1 0;
+main i[class*="fa"] {
+    color: #fff;
 }
-
-#tel {
-    order: 2;
+main i[class*="fa"]:hover {
+    color: #000;
 }
-
-main {
-    border: 1px dashed blue;
-    background-color:rgba(0,0,255,0.3);
-    flex: 1 1 60%;
-}
-main section {
+main article {
+    flex: 0 1 auto;
+    padding: 30px;
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-evenly;
     align-items: stretch;
+    max-height: 100vh;
 }
-main section h2 {
-    flex: 1 0 100%;
-    text-align: center; 
+main article h3 {
+    font-family: monospace;
+    font-size: 0.8em;
 }
-main section article {
-    flex: 1 1 0;
-    display: flex;
-    flex-flow: column wrap;
-    height: 150px;
-    border: 1px solid blue;
-    margin: 10px auto;
-    width: 70%;
-}
-main section article h3, main section article p {
-    flex: 1 1 50%;
-    padding: 10px;
-}
-main section article img {
+main article img {
+    flex: 0 1 auto;
     width: auto;
-    height: 148px;
-    order: -1;
-    flex: 0 1 0;
+    height: 80%;
+    margin: 0 auto;
 }
-main section article:nth-child(odd) img {
-    order: 2;
+main article footer {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+main article p {
+    font-size: 0.7em;
+}
+main article footer div p.cliente {
+    font-weight: bold;
+    font-size: 1.05em;
+}
+#projeto01 {
+    background-color: #f4b93d;
+}
+#projeto02 {
+    background-color: #005ba9;
+}
+#projeto03 {
+    background-color: #b4ddbf;
+}
+#projeto04 {
+    background-color: #4a4a4a;
+}
+#projeto04 img,
+#projeto06 img {
+    flex: 0 1 auto;
+    width: 40%;
+    height: auto;
+    margin: 0 auto;
+}
+#projeto05 {
+    background-color: #54e7c7;
+}
+#projeto06 {
+    background-color: #009ee2;
+}
+#projeto07 {
+    background-color: #eabad8;
+}
+.extra-info {
+    background-color: #f4f3f3;
+}
+.extra-info h3 {
+    text-align: left;
+    font-size: 1.2em;
+    color: #4a4a4a;
+    text-transform: uppercase;
+    margin: 12px auto 12px 0;
+}
+.extra-info p {
+    text-decoration: line-through;
+    color: lightgrey;
+    font-size: 0.6em;
+    margin: 12px auto 0 auto;
+}
+.extra-info a {
+    font-size: 0.6em;
+    font-weight: lighter;
+}
+hr {
+    border: none;
+    margin: 26px auto 15px auto;
+    width: 100%;
+    border-top: 7px solid #d8d8d8;
+}
+#footer {
+    background-color: #222;
+    color: #999;
+    text-align: center;
+    font-size: 0.66em;
 }
