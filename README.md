@@ -9,6 +9,8 @@ Aula de CSS | Flexbox
 
 -- flex-wrap: wrap / nowrap / wrap-reverse; (quebra da linha ou coluna)
 
+-- flex-flow: flex-direction + flex-wrap
+
 -- justify-content (acompanha eixo do flex-direction)
   flex-start (alinha no início*)
   flex-end (alinha no final*)
