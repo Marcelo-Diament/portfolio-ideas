@@ -6,36 +6,40 @@
     font-family: 'Open Sans', sans-serif;
     font-size: 32px;
 }
-a, a:visited, a:active {
+
+a,
+a:visited,
+a:active {
     text-decoration: none;
     color: blue;
     font-size: inherit;
     font-weight: bolder;
 }
+
 a:hover {
     color: #000;
 }
+
 header p {
-    margin: 16vh auto 25px auto;
-    width: 64%;
-    font-size: 2em;
+    margin: 25px;
+    font-size: 1.25em;
     line-height: 1.25em;
     font-family: 'Montserrat', sans-serif;
 }
+
 main article {
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     justify-content: space-around;
     align-items: center;
     padding: 50px;
 }
+
 main article div {
-    flex: 0 1 33%;
+    flex: 1 1 100%;
     margin: auto;
 }
-main article:nth-child(even) div:nth-child(2) {
-    order: -1;
-}
+
 main article div h2,
 main article div p,
 main article div a {
@@ -43,19 +47,131 @@ main article div a {
     width: 80%;
     margin: auto;
 }
+
 main article div h2 {
     font-size: 1.25em;
 }
+
 main article div p,
 main article div a {
     font-weight: 300;
     font-size: 0.66em;
 }
+
 main article div a {
     font-weight: bolder;
+    margin-bottom: 25px;
 }
+
 main article div img {
     width: 90%;
     height: auto;
-    float: right;
+}
+
+aside h2 {
+    margin: auto;
+}
+
+aside h2:first-child {
+    text-align: center;
+}
+
+aside h2::after {
+    content: "";
+    display: inline-block;
+    height: 0.5em;
+    vertical-align: bottom;
+    width: 3%;
+    margin-left: 10px;
+    border-top: 2px solid black;
+}
+
+aside div {
+    margin: 25px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+}
+
+aside div img {
+    flex: 0 1 0;
+    width: 50%;
+    height: auto;
+}
+
+aside article {
+    margin: 50px;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+aside article div {
+    flex-flow: column nowrap;
+}
+
+aside article a {
+    margin: 30px;
+    width: 75%;
+}
+
+footer {
+    width: 75%;
+    margin: 25px auto;
+}
+footer p {
+    font-size: 0.8em;
+}
+
+@media only screen and (min-width: 768px) {
+    header p {
+        margin: 25vh auto 25px auto;
+        width: 64%;
+        font-size: 2em;
+        line-height: 1.25em;
+    }
+
+    main article div {
+        flex: 0 1 33%;
+        margin: auto;
+    }
+
+    main article:nth-child(even) div:nth-child(2) {
+        order: -1;
+    }
+
+    main article div img {
+        float: right;
+    }
+
+    aside h2:first-child {
+        text-align: left;
+    }
+
+    aside h2 {
+        width: 75%;
+        margin: 30px auto;
+    }
+
+    aside div {
+        width: 75%;
+        margin: auto;
+    }
+
+    aside div img {
+        flex: 1 1 0;
+        width: 30%;
+    }
+
+    aside article {
+        margin: 50px auto;
+        width: 75%;
+        flex-flow: row nowrap;
+        align-items: flex-end;
+    }
+
+    aside article div {
+        margin: 0;
+        width: 50%;
+        flex-flow: row wrap;
+    }
 }
