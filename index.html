@@ -2,144 +2,119 @@
 <html lang="pt">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portolio</title>
+    <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, maximum-scale=5.0, minimum-scale=1.0">
+    <title>CSS | Flexbox</title>
+    <meta name="title" content="CSS | Flexbox | Práticas aplicando o conceito de Flexbox">
+    <meta name="description" content="Práticas CSS Flexbox | 3 versões de portfolio baseadas em referências selecionadas pelos alunos">
+    <meta name="identifier-URL" content="https://www.djament.com.br">
+    <meta name="url" content="https://www.djament.com.br">
+    <meta name="abstract" content="Práticas CSS Flexbox">
+    <meta name="author" content="Marcelo Diament, Djament Comunicação">
+    <meta name="robots" content="index,follow">
+    <meta name="contact" content="contato@djament.com.br">
+    <meta name="reply-to" content="contato@djament.com.br">
+    <meta name="copyright" content="Djament">
+    <meta name="rating" content="general">
+    <meta name="web_author" content="Djament Comunicação">
+    <meta property="og:site_name" content="Djament">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Práticas CSS Flexbox">
+    <meta property="og:description" content="Práticas CSS Flexbox | 3 versões de portfolio baseadas em referências selecionadas pelos alunos">
+    <meta property="og:url" content="https://djament.com.br">
+    <meta property="og:locale" content="pt-BR">
+    <meta name="og:locality" content="São Paulo">
+    <meta name="og:region" content="SP">
+    <meta name="og:country-name" content="BR">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://djament.com.br/praticas/portfolio/assets/img/desafio-cv.gif">
+    <meta property="og:image:alt" content="Djament | Comunicação Digital">
+    <meta property="og:image:url" content="https://djament.com.br/praticas/portfolio/assets/img/desafio-cv.gif">
+    <meta property="og:image:secure_url" content="https://djament.com.br/praticas/portfolio/assets/img/desafio-cv.gif">
+    <meta property="og:image:type" content="img/jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="634">
+    <meta name="application-name" content="Práticas CSS Flexbox">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Práticas CSS Flexbox">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="msapplication-TileColor" content="#039FCE">
+    <meta name="theme-color" content="#039FCE">
+    <!--[if IE]><link rel="shortcut icon" href="https://djament.com.br/favicons/favicon.ico"><![endif]-->
+    <meta name="msapplication-TileImage" content="https://djament.com.br/favicons/tile.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="https://djament.com.br/favicons/favicon-512x512.png">
+    <link rel="icon" type="image/png" sizes="228x228" href="https://djament.com.br/favicons/favicon-228x228.png">
+    <link rel="shortcut icon" sizes="196x196" href="https://djament.com.br/favicons/favicon-196.png">
+    <link rel="icon" sizes="192x192" href="https://djament.com.br/favicons/touch-icon-192x192.png">
+    <link rel="apple-touch-icon-precomposed" sizes="180x180" href="https://djament.com.br/favicons/apple-touch-icon-precomposed-180x180.png">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="https://djament.com.br/favicons/apple-touch-icon-precomposed-152x152.png">
+    <link rel="icon" type="image/png" sizes="128x128" href="https://djament.com.br/favicons/favicon-128x128.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://djament.com.br/favicons/apple-touch-icon-precomposed-144x144.png">
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="https://djament.com.br/favicons/apple-touch-icon-precomposed-120x120.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://djament.com.br/favicons/apple-touch-icon-precomposed-114x114.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="https://djament.com.br/favicons/favicon-96x96.png">
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="https://djament.com.br/favicons/apple-touch-icon-precomposed-76x76.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://djament.com.br/favicons/apple-touch-icon-precomposed-72x72.png">
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="https://djament.com.br/favicons/apple-touch-icon-precomposed-60x60.png">
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="https://djament.com.br/favicons/apple-touch-icon-precomposed-57x57.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://djament.com.br/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://djament.com.br/favicons/favicon-16x16.png">
+
     <link href="https://fonts.googleapis.com/css2?family=Cousine&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.9.0/css/all.css" integrity="sha384-vlOMx0hKjUCl4WzuhIhSNZSm2yQCaf0mOU1hEDK/iztH3gU4v5NMmJln9273A6Jz" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-    <aside>
-            <h1 class="titulo">DESENVOLVEDOR.</h1>
-            <h1 class="titulo">PROFESSOR.</h1>
-            <h1 class="titulo">EX-MÚSICO.</h1>
-            <h1 class="titulo">& MARIDO.</h1>
-            <p>Atualmente trabalhando na <a href="https://digitalhouse.com" target="_blank" rel="noopener noreferrer">DH</a> e alocaldo na <a href="http://whirlpool.com" target="_blank" rel="noopener noreferrer">Whirlpool</a> através da agência <a href="http://jussi.com.br" target="_blank" rel="noopener noreferrer">Jüssi</a>. Conheça meu trabalho:</p>
-            <ul class="lista-horizontal">
-                <li><a href="https://github.com/marcelo-diament" target="_blank" rel="noopener noreferrer" title="Acessar perfil no GitHub de Marcelo Diament"><i class="fab fa-github"></i></a></li>
-                <li><a href="https://linkedin.com/in/marcelo-diament" target="_blank" rel="noopener noreferrer" title="Acessar perfil no Linked In de Marcelo Diament"><i class="fab fa-linkedin"></i></a></li>
-                <li><a href="https://djament.com.br/cv" target="_blank" rel="noopener noreferrer" title="Acessar CV de Marcelo Diament"><i class="fas fa-file-alt"></i></a></li>
-            </ul>
-            <a href="http://djament.com.br" target="_blank" rel="noopener noreferrer" title="Manda uma mensagem pra mim!">Fale comigo!</a>
-    </aside>
     <main>
-        <article id="projeto01">
-            <h3>.001</h3>
-            <img src="./assets/img/placeholder-01-01.png" alt="placeholder">
-            <footer>
-                <div>
-                    <p>Projeto #01 | Web App</p>
-                    <p class="cliente">Cliente XYZ</p>
-                </div>
-                <a href="https://compracerta.com.br" target="_blank" rel="noopener noreferrer"><i class="fas fa-globe-americas"></i></a>
-            </footer>
+        <h1>Práticas Flexbox</h1>
+        <p>Exemplos de portfolio baseados em referências para melhor compreensão do conceito de Flexbox. Deve ficar claro que é um projeto com fins didáticos e os portfolios citados em cada práticas não são de minha autoria - o exercício consiste apenas em replicar o estilo de cada referência visando aplicar os conceitos de Flexbox e outros vistos em aula.</p>
+        <article>
+            <img src="./assets/img/versao-01.jpg" alt="Preview da prática 01">
+            <div>
+                <h3>#01 Charlie Waite</h3>
+                <p>Prática baseada na referência <a href="https://charliewaite.me/" target="_blank" rel="noopener noreferrer" title="Acessar referência 01">charliewaite</a>.</p>
+                <h4>Recursos que vale a pena conferir:</h4>
+                <p><i>scrollbar</i> customizada, seletor por atributos que contenham um trecho de texto específico e <i>overflow-y</i> na tag <i>main</i>, dando a impressão de que a tag <i>aside</i> está fixa.</p>
+                <nav>
+                    <a href="portfolio-v1.html" target="_blank" rel="next" class="btn">Prática</a>
+                    <a href="https://github.com/Marcelo-Diament/meu-portfolio/portfolio-v1.html"  target="_blank" rel="noopener noreferrer" title="Ver repositório" class="btn">Repositório</a>
+                    <a href="https://charliewaite.me/"  target="_blank" rel="noopener noreferrer" title="Acessar referência 01" class="btn">Referência</a>
+                </nav>
+            </div>
         </article>
-        <article id="projeto02">
-            <h3>.002</h3>
-            <img src="./assets/img/placeholder-01-02.png" alt="placeholder">
-            <footer>
-                <div>
-                    <p>Projeto #02 | PWA</p>
-                    <p class="cliente">Cliente ABC</p>
-                </div>
-                <a href="https://compracerta.com.br" target="_blank" rel="noopener noreferrer"><i class="fas fa-globe-americas"></i></a>
-            </footer>
+        <article>
+            <img src="./assets/img/versao-02.jpg" alt="Preview da prática 02">
+            <div>
+                <h3>#02 Karolis Kosas</h3>
+                <p>Prática baseada na referência <a href="https://karoliskosas.com/" target="_blank" rel="noopener noreferrer" title="Acessar referência">karoliskosas</a>.</p>
+                <h4>Recursos que vale a pena conferir:</h4>
+                <p>Utilização do <i>:nth-child(odd)</i> somado ao <i>:nth-child(2)</i> para alternar o posicionamento das imagens</p>
+                <nav>
+                    <a href="portfolio-v2.html" target="_blank" rel="next" class="btn">Prática</a>
+                    <a href="https://github.com/Marcelo-Diament/meu-portfolio/portfolio-v2.html" target="_blank" rel="noopener noreferrer" title="Ver repositório" class="btn">Repositório</a>
+                    <a href="https://karoliskosas.com/" target="_blank" rel="noopener noreferrer" title="Acessar referência 02" class="btn">Referência</a>
+                </nav>
+            </div>
         </article>
-        <article id="projeto03">
-            <h3>.003</h3>
-            <img src="./assets/img/placeholder-01-03.png" alt="placeholder">
-            <footer>
-                <div>
-                    <p>Projeto #03 | App</p>
-                    <p class="cliente">Cliente 0123</p>
-                </div>
-                <a href="https://compracerta.com.br" target="_blank" rel="noopener noreferrer"><i class="fas fa-globe-americas"></i></a>
-            </footer>
-        </article>
-        <article id="projeto04">
-            <h3>.004</h3>
-            <img src="./assets/img/placeholder-01-04.png" alt="placeholder">
-            <footer>
-                <div>
-                    <p>Projeto #04 | Desktop App</p>
-                    <p class="cliente">Cliente CP3O</p>
-                </div>
-                <a href="https://compracerta.com.br" target="_blank" rel="noopener noreferrer"><i class="fas fa-globe-americas"></i></a>
-            </footer>
-        </article>
-        <article id="projeto05">
-            <h3>.005</h3>
-            <img src="./assets/img/placeholder-01-05.png" alt="placeholder">
-            <footer>
-                <div>
-                    <p>Projeto #05 | Social Network</p>
-                    <p class="cliente">Cliente XYZ</p>
-                </div>
-                <a href="https://compracerta.com.br" target="_blank" rel="noopener noreferrer"><i class="fas fa-globe-americas"></i></a>
-            </footer>
-        </article>
-        <article id="projeto06">
-            <h3>.006</h3>
-            <img src="./assets/img/placeholder-01-06.png" alt="placeholder">
-            <footer>
-                <div>
-                    <p>Projeto #06 | Gadget App</p>
-                    <p class="cliente">Cliente ABC</p>
-                </div>
-                <a href="https://compracerta.com.br" target="_blank" rel="noopener noreferrer"><i class="fas fa-globe-americas"></i></a>
-            </footer>
-        </article>
-        <article id="projeto07">
-            <h3>.007</h3>
-            <img src="./assets/img/placeholder-01-07.png" alt="placeholder">
-            <footer>
-                <div>
-                    <p>Projeto #07 | App</p>
-                    <p class="cliente">Cliente XYZ</p>
-                </div>
-                <a href="https://compracerta.com.br" target="_blank" rel="noopener noreferrer"><i class="fas fa-globe-americas"></i></a>
-            </footer>
-        </article>
-        <article class="extra-info">
-            <h3>Projetos Pessoais.</h3>
-            <ul>
-                <li>
-                    <p>Plataforma que visa fomentar uso de metodologias ágeis | MVP</p>
-                    <a href="https://agilmindset.com" target="_blank" rel="noopener noreferrer" title="Acessar agilmindset">agilmindset</a>
-                </li>
-                <li>
-                    <p>Site Institucional para minha esposa</p>
-                    <a href="https://costureira-de-cenografia.com.br" target="_blank" rel="noopener noreferrer" title="Acessar Costureira de Cenografia">Costureira de Cenografia</a>
-                </li>
-                <li>
-                    <p>Calculadora para Cortinas</p>
-                    <a href="https://calculadora-de-cortina.com.br/" target="_blank" rel="noopener noreferrer" title="Acessar Calculadora de Cortina">Calculadora de Cortina</a>
-                </li>
-                <li>
-                    <p>MVP para compartilhar conteúdo sobre desenvolvimento web</p>
-                    <a href="https://thewebdev.com.br" target="_blank" rel="noopener noreferrer" title="Acessar theWebDev">theWebDev</a>
-                </li>
-            </ul>
-            <hr>
-            <h3>Bandas.</h3>
-            <ul>
-                <li>
-                    <p>Rock | Blues</p>
-                    <a href="https://www.youtube.com/channel/UCLDDE2TDQ1s4Iz0ArsuZCdQ" target="_blank" rel="noopener noreferrer" title="Acessar canal do YouTube">Sincopatas</a>
-                </li>
-                <li>
-                    <p>Reggae | Rock</p>
-                    <a href="https://www.youtube.com/user/SemGramaVEVO" target="_blank" rel="noopener noreferrer" title="Acessar canal Vevo no YouTUbe">SemGrama</a>
-                </li>
-                <li>
-                    <p>Rock'n'Roll</p>
-                    <a href="https://www.youtube.com/playlist?list=UUFHW8TmeBgWfwY42Q8Nu5CQ" target="_blank" rel="noopener noreferrer" title="Acessar Playlist no YouTube">Tuff Mama</a>
-                </li>
-            </ul>
-        </article>
-        <article id="footer">
-            <p>Marcelo Diament | baseado no site <a href="http://charliewaite.me/" target="_blank" rel="noopener noreferrer" title="Acessar referência">charliewaite</a> | fins exclusivamente didáticos</p>
+        <article>
+            <img src="./assets/img/versao-03.jpg" alt="Preview da prática 03">
+            <div>
+                <h3>#03 Niy Watkins</h3>
+                <p>Prática baseada na referência <a href="https://www.niyawatkins.com/" target="_blank" rel="noopener noreferrer" title="Acessar referência">niywatkins</a>.</p>
+                <h4>Recursos que vale a pena conferir:</h4>
+                <p>Utilização do <i>scroll-snap</i> para definir o scroll e a gambiarra para simular o efeito <i>paralaxe</i>.</p>
+                <nav>
+                    <a href="portfolio-v3.html" target="_blank" rel="next" class="btn">Prática</a>
+                    <a href="https://github.com/Marcelo-Diament/meu-portfolio/portfolio-v3.html" target="_blank" rel="noopener noreferrer" title="Ver repositório" class="btn">Repositório</a>
+                    <a href="https://www.niyawatkins.com/" target="_blank" rel="noopener noreferrer" title="Acessar referência 03" class="btn">Referência</a>
+                </nav>
+            </div>
         </article>
     </main>
+    <footer>
+        <p>Fins exclusivamente didáticos</p>
+    </footer>
 </body>
 </html>
