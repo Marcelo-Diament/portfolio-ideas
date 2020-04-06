@@ -239,7 +239,7 @@ main article:hover ~ article {
     }
 
     #scrollDown {
-        left: 45%;
+        display: none;
     }
 
     footer p {
